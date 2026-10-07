@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWeek 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <h1>TechWeek 2026</h1>
+            <p>Semana Acadêmica de Tecnologia e Inovação</p>
+
+            <nav>
+                <a href="#regras">Regras</a>
+                <a href="#programacao">Programação</a>
+                <a href="#inscricao">Inscrição</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="regras" class="bloco regras">
+            <h2>Regras da Avaliação</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>01 — Desenvolvimento</h3>
+                    <p>A avaliação é individual e deverá ser desenvolvida utilizando apenas HTML, CSS e JavaScript.</p>
+                    <p>Não é permitido utilizar frameworks, bibliotecas externas ou códigos prontos.</p>
+                </article>
+
+                <article class="card">
+                    <h3>02 — Consulta</h3>
+                    <p>É permitida a consulta aos materiais, exemplos e projetos desenvolvidos anteriormente durante as aulas.</p>
+                    <p>Não será permitido acesso à Internet durante a avaliação.</p>
+                </article>
+
+                <article class="card">
+                    <h3>03 — Entrega</h3>
+                    <p>O projeto deverá respeitar a estrutura de arquivos solicitada e funcionar integralmente de forma local.</p>
+                    <p>Antes da entrega, teste todas as funcionalidades e validações.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bloco evento">
+            <div class="evento-texto">
+                <h2>Tecnologia, inovação e conhecimento</h2>
+                <p>
+                    A TechWeek 2026 reúne estudantes, professores e profissionais para compartilhar
+                    conhecimentos sobre desenvolvimento de software, inteligência artificial e tecnologias para Web.
+                </p>
+                <p>Participe das palestras, oficinas e minicursos durante a semana acadêmica.</p>
+            </div>
+
+            <div class="evento-logo">
+                <img src="img/seminfo.apng" alt="Logo SEMINFO">
+            </div>
+        </section>
+
+        <section id="programacao">
+            <h2>Programação</h2>
+
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Atividade</th>
+                            <th>Local</th>
+                            <th>Vagas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Abertura oficial</td>
+                            <td>Auditório</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td>Desenvolvimento Web Moderno</td>
+                            <td>Auditório</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>10:30</td>
+                            <td>Introdução à Inteligência Artificial</td>
+                            <td>Laboratório 01</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Construindo aplicações com JavaScript</td>
+                            <td>Laboratório 02</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td>Encerramento e premiação</td>
+                            <td>Auditório</td>
+                            <td>150</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="inscricao">
+            <h2>Inscrição</h2>
+            <p>Preencha os dados abaixo para realizar sua inscrição na TechWeek 2026.</p>
+
+            <form id="formInscricao" novalidate>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <div class="campo campo-inteiro">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome">
+                        <small class="erro"></small>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="campo">
+                            <label for="idade">Idade *</label>
+                            <input type="number" id="idade" name="idade" min="16" max="100">
+                            <small class="erro"></small>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email">
+                            <small class="erro"></small>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="campo">
+                            <label for="instituicao">Instituição *</label>
+                            <input type="text" id="instituicao" name="instituicao">
+                            <small class="erro"></small>
+                        </div>
+
+                        <div class="campo">
+                            <label for="curso">Curso *</label>
+                            <input type="text" id="curso" name="curso">
+                            <small class="erro"></small>
+                        </div>
+                    </div>
+
+                    <div class="campo campo-inteiro">
+                        <label for="dataParticipacao">Data de participação *</label>
+                        <input type="date" id="dataParticipacao" name="dataParticipacao">
+                        <small class="erro"></small>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Participação</legend>
+
+                    <div class="campo campo-inteiro">
+                        <label for="minicurso">Minicurso *</label>
+                        <select id="minicurso" name="minicurso">
+                            <option value="">Selecione...</option>
+                            <option value="JavaScript para Web">JavaScript para Web</option>
+                            <option value="Introdução à Inteligência Artificial">Introdução à Inteligência Artificial</option>
+                            <option value="UX e Interfaces Web">UX e Interfaces Web</option>
+                            <option value="Git e GitHub">Git e GitHub</option>
+                        </select>
+                        <small class="erro"></small>
+                    </div>
+
+                    <div class="grupo">
+                        <span class="rotulo">Modalidade de participação *</span>
+                        <label><input type="radio" name="modalidade" value="Presencial"> Presencial</label>
+                        <label><input type="radio" name="modalidade" value="Online"> Online</label>
+                        <small class="erro" id="erroModalidade"></small>
+                    </div>
+
+                    <div class="grupo">
+                        <span class="rotulo">Áreas de interesse *</span>
+                        <label><input type="checkbox" name="interesses" value="Desenvolvimento Web"> Desenvolvimento Web</label>
+                        <label><input type="checkbox" name="interesses" value="Inteligência Artificial"> Inteligência Artificial</label>
+                        <label><input type="checkbox" name="interesses" value="Desenvolvimento Mobile"> Desenvolvimento Mobile</label>
+                        <label><input type="checkbox" name="interesses" value="Ciência de Dados"> Ciência de Dados</label>
+                        <small class="erro" id="erroInteresses"></small>
+                    </div>
+
+                    <div class="campo campo-inteiro">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" placeholder="Digite alguma observação..."></textarea>
+                    </div>
+                </fieldset>
+
+                <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+                <div class="acoes">
+                    <button type="submit" class="btn primario">Realizar inscrição</button>
+                    <button type="button" id="btnLimpar" class="btn secundario">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="resumo" class="bloco resumo oculto">
+            <h2>Inscrição realizada</h2>
+            <p>Confira os dados informados:</p>
+
+            <div id="dadosResumo"></div>
+        </section>
+    </main>
+
+    <footer>
+        TechWeek 2026 — Semana Acadêmica de Tecnologia
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
